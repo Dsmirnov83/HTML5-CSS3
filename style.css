@@ -1,6 +1,6 @@
 @font-face {
     font-family: SocialIco;
-    src: url(../Less1/fonts/Socialico.ttf);
+    src: url(../HTML5-CSS3/fonts/Socialico.ttf);
 
 }
 
@@ -31,6 +31,14 @@ body {
     align-items: center;
 }
 
+.clip {
+    max-width: 590px;
+    max-height: 352px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 /* Свойства для адаптива конец  */
 
 .conteiner {
@@ -47,10 +55,11 @@ body {
 .headerProductImg {
     margin: 50px;
     float: right;
+    max-width: 90%;
 }
 
 .firstblock {
-    background-color: #445162;
+    background-color: #010009;
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -86,6 +95,7 @@ h1 {
     list-style: none;
     background: url(img/check_icon.png) no-repeat 0 4px;
     padding-left: 35px;
+    max-width: 90%;
 }
 
 .main {}
@@ -98,19 +108,23 @@ h1 {
     line-height: 24px;
     display: inline-block;
     margin-bottom: 20px;
+    max-width: 90%;
 }
 
 .secondblock {
     display: inline-block;
     margin: 49px 50px;
 
+
 }
 
 .shape2 {
-    width: 430px;
+
     height: 245px;
-    background-color: #445161;
     display: inline-block;
+    max-width: 90%;
+    margin-top: -180px;
+
 
 }
 
@@ -148,6 +162,35 @@ h2 {
     display: inline-block;
 }
 
+.videobanner {
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.vb {
+    max-width: 1280px;
+    text-align: center;
+
+}
+
+.vbblck {
+    position: relative;
+}
+
+.f {
+    color: white;
+    margin-top: 10px;
+}
+
+.videobannertext {
+    color: red;
+    font-size: 100px;
+    margin-top: -626px;
+    position: absolute;
+    width: 100%;
+}
+
 h3 {
     color: #445161;
     font-family: "Arial";
@@ -156,6 +199,7 @@ h3 {
     line-height: 36px;
     text-align: center;
     margin: 0px auto 29px auto;
+    max-width: 90%;
 }
 
 .thirttext {
@@ -220,7 +264,7 @@ h4 {
 }
 
 .fortext {
-    width: 359px;
+    max-width: 359px;
     color: #333333;
     font-family: "Arial";
     font-size: 16px;
@@ -247,15 +291,14 @@ h4 {
 
 .textreview {
     background-image: url(img/bg_review.png);
-    height: 121px;
-    width: 483px;
+    max-width: 483px;
     float: left;
     margin-bottom: 24px;
 
 }
 
 .textrev {
-    width: 436px;
+    max-width: 436px;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
@@ -422,6 +465,14 @@ input {
 
 }
 
+form input:invalid {
+    background-color: red;
+}
+
+form input:valid {
+    background-color: white;
+}
+
 .form {
     float: right;
     box-sizing: border-box;
@@ -433,6 +484,18 @@ input {
     height: 26px;
     margin-right: 7px;
 
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: white;
+
+}
+
+option {
+    background-color: white;
 }
 
 .socialIcons {
@@ -454,17 +517,100 @@ input {
         margin: 0 auto;
     }
 
+    .centerblock {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .videobannertext {
+
+        font-size: 60px;
+        margin-top: -300px;
+
+    }
+
+    .videobanner {
+        height: 54vh;
+
+    }
+
+    .shape2 {
+        margin-top: -0px;
+    }
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
+
+    .clip {
+        max-width: 100vh;
+        max-height: 29vh;
+        display: flex;
+
+    }
+
+    .shape2 {
+        width: 320px;
+        height: 191px;
+        display: inline-block;
+        max-width: 90%;
+        object-fit: contain;
+        margin: 0 auto;
+
+
+
+    }
 
     .massage {
         display: flex;
-        width: 100%;
+        width: 51vh;
         height: 170px;
         background-color: #ffffff;
         border-radius: 5px;
         padding-left: 10px;
     }
+
+    .headerProductImg {
+        margin: 0px auto;
+    }
+
+    .kvadrat {
+        float: none;
+        margin: 15px auto;
+    }
+
+    .secondblock {
+        display: inline-block;
+        margin: 10px 10px;
+    }
+
+    .circle {
+        float: none;
+        margin: 15px auto;
+    }
+
+    .textblock {
+        margin-right: 10px;
+    }
+
+    .ml50 {
+        margin-left: 2 0px;
+    }
+
+    .videobannertext {
+
+        font-size: 30px;
+        margin-top: -160px;
+
+    }
+
+    .videobanner {
+        height: 40vh;
+
+    }
+
+    option {
+        background-color: white;
+    }
+
 }

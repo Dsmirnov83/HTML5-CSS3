@@ -19,33 +19,40 @@
 
             <div class="firsttext col-md-6  clerfix">
 
-                <h1>Product name</h1>
+                <h1>Король и Шут</h1>
                 <ul>
-                    <li class="bannertext">Put on this page information about your product</li>
-                    <li class="bannertext">A detailed description of your product</li>
-                    <li class="bannertext">Tell us about the advantages and merits</li>
-                    <li class="bannertext">Associate the page with the payment system</li>
+                    <li class="bannertext">Пролетели дни</li>
+                    <li class="bannertext">Фокусы мои</li>
+                    <li class="bannertext">Странные для всех</li>
+                    <li class="bannertext">Обрели успех</li>
                 </ul>
 
 
             </div>
             <div class="col-md-6">
-                <img class="headerProductImg" src="https://placeimg.com/470/215/nature" alt="">
+
+                <video class="clip" src="img/Fokusnik.mp4" controls preload="metadata" poster="img/videoimg.jpg"></video>
             </div>
 
         </div>
         <div class="main">
-            <section>
-                <div class="secondblock">
-                    <div class="textblock">
-                        <h2>About your product</h2>
-                        <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut <br>ipsum.</p> <br>
-
-                        <p class="about">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
-                    </div>
-                    <div class="shape2"></div>
+            <div class="vbblck">
+                <video src="img/knyazz.mp4" class="videobanner" autoplay muted loop></video>
+                <div class="vb">
+                    <p class="videobannertext">КняZZ <br> Человек-загадка</p>
                 </div>
-            </section>
+            </div>
+
+            <div class="secondblock clearfix centerblock">
+                <div class="textblock clearfix centerblock">
+                    <h2>About your product</h2>
+                    <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut <br>ipsum.</p> <br>
+
+                    <p class="about">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                </div>
+                <img src="img/Kish_1block.jpg" class="shape2 " alt="">
+
+            </div>
         </div>
 
         <div class="pluses">
@@ -70,14 +77,14 @@
         </div>
         <div class="forblock clearfix">
             <h3 class="mt50">Scrinshots</h3>
-            <div class="col-md-6 clearfix">
+            <div class="col-md-6 clearfix centerblock">
                 <div class="kvadrat"></div>
                 <div class="fortext">
                     <h4>The description for the image</h4>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </div>
             </div>
-            <div class="col-md-6 clearfix">
+            <div class="col-md-6 clearfix centerblock">
                 <div class="kvadrat"></div>
                 <div class="fortext">
                     <h4>The description for the image</h4>
@@ -86,15 +93,15 @@
             </div>
 
 
-            <div class="col-md-6 clearfix">
+            <div class="col-md-6 clearfix centerblock">
                 <div class="kvadrat"></div>
                 <div class="fortext">
                     <h4>The description for the image</h4>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </div>
             </div>
-            <div class="col-md-6 clearfix">
-                <div class="kvadrat"></div>
+            <div class="col-md-6 clearfix centerblock">
+                <div class="kvadrat centerblock"></div>
                 <div class="fortext">
                     <h4>The description for the image</h4>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
@@ -184,10 +191,18 @@
                 <h5>Contacts</h5>
                 <div class="forms col-md-7 clearfix">
                     <form action="111" class="form clearfix">
-                        <br> <input type="text" class="inputtext" placeholder="Your name:"><br>
-                        <br> <input type="text" class="inputtext" placeholder="Your email:"> <br>
+                        <br> <input type="text" class="inputtext" pattern="\S+[А-яа-я]" placeholder="Ваше имя:"><br>
+                        <label for="gender" class="f">Пол</label>
+                        <select id="gender">
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select><br>
+                        <br> <input type="email" class="inputtext" placeholder="Введите email:"> <br>
                         <br>
-                        <textarea name="message" class="massage inputtext" placeholder="Your message:"></textarea>
+
+                        <textarea name="message" class="massage inputtext" placeholder="Сообщение:"></textarea>
+                        <input type="checkbox" class="checkbox">
+                        <p class="f">Согласен на обраюотку персональных данных</p>
                     </form>
                 </div>
                 <address class="icons col-md-5 clearfix">
@@ -208,6 +223,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
