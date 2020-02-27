@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
 }
-.menu{
+
+.menu {
     display: inline-block;
 }
-html, body{
+
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -15,8 +18,17 @@ html, body{
     clear: both;
 }
 
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .icp {
     float: left;
+}
+
+.sosial {
+    display: inline-block
 }
 
 .conteiner {
@@ -26,11 +38,12 @@ html, body{
 
 header {
     display: grid;
-    padding: 50px 50px 0px 8%;
+    padding: 50px 50px 0px 206px;
     grid-gap: 5%;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 51px;
+    grid-auto-rows: auto;
 }
+
 
 .logo {
     background-image: url(IMG/Logo.png);
@@ -55,8 +68,135 @@ header {
 .firsticons {
     display: inline-block;
     margin-left: 19px;
+    min-width: 184px;
 
 }
+
+.bounce-in-top {
+    -webkit-animation: bounce-in-top 1.1s both;
+    animation: bounce-in-top 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
 
 .icontext {
     color: #6a6a6a;
@@ -76,6 +216,7 @@ header {
     background-color: #c1c1c1;
     opacity: 0.31;
     margin: 33px auto 34px auto;
+    text-align: center;
 }
 
 nav {
@@ -85,6 +226,7 @@ nav {
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 51px;
     width: 546px;
+    display: inline-block;
 }
 
 .list {
@@ -94,6 +236,7 @@ nav {
     font-family: "Nexa Bold";
     font-size: 19px;
     font-weight: 400;
+    margin-right: 20px;
 }
 
 .active {
@@ -101,23 +244,22 @@ nav {
 }
 
 .sosial {
-    /* Style for "    " */
     width: 213px;
     height: 24px;
     color: #1f1f1f;
     font-family: "Font Awesome";
     font-size: 23px;
     font-weight: 400;
-    /* Text style for ",     ," */
     letter-spacing: 1.8px;
+    display: inline-block;
+    margin-left: 436px;
 }
 
 .banner {
-    /* Style for "Layer 11" */
     width: 100%;
     height: 642px;
-    background: url(IMG/Layer_10.png);
-    padding 182px 0 0 253px;
+    background: url(img/Layer_10.png) no-repeat center center;
+    background-size: cover;
 }
 
 h1 {
@@ -161,6 +303,36 @@ h1 {
     grid-auto-rows: minmax(360px auto);
 }
 
+.rotate-vert-center:hover {
+    -webkit-animation: rotate-vert-center 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0.5s both;
+    animation: rotate-vert-center 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0.5s both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate-vert-center {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+
 .treatment {
     background-color: #71afd0;
     padding: 77px;
@@ -175,8 +347,11 @@ h2 {
     margin-top: 23px;
 }
 
+.center {
+    margin: 0 auto;
+}
+
 .regtext {
-    width: 264px;
     height: 77px;
     color: #ffffff;
     font-family: "Open Sans";
@@ -221,6 +396,7 @@ h3 {
     font-weight: 400;
     line-height: 30px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .whyus {
@@ -229,7 +405,25 @@ h3 {
     grid-gap: 43px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
+    grid-template-areas: "whi1 whi2 whi3" "whi4 whi2 whi5"
 }
+    
+
+    .whi1{
+        grid-area: whi1;
+    }
+        .whi2{
+        grid-area: whi2;
+    }
+        .whi3{
+        grid-area: whi3;
+    }
+        .whi4{
+        grid-area: whi4;
+    }
+        .whi5{
+        grid-area: whi5;
+    }
 
 .hwhy {
     color: #6f6f6e;
@@ -290,14 +484,44 @@ h3 {
     display: grid;
     padding: 99px 208px 100px 218px;
     grid-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "howwewurks howwewurks ourcreative""howwewurkstext howwewurkstext ourcreativetext""lorem1column lorem2column lorem3column""lorembutton lorembutton ."
 }
 
 .how1 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column: 1/3;
+    grid-area: howwewurks;
+}
+
+.how2 {
+    grid-area: ourcreative;
+}
+
+.howwewurkstext {
+    grid-area: howwewurkstext;
+}
+
+.ourcreativetext {
+    grid-area: ourcreativetext;
+}
+
+.lorem1column {
+    grid-area: lorem1column;
+}
+
+.lorem2column {
+    grid-area: lorem2column;
+}
+
+.lorem3column {
+    grid-area: lorem3column;
+}
+
+.lorembutton {
+    grid-area: lorembutton;
+    margin: 0 auto;
 }
 
 .hphoto {
@@ -384,9 +608,27 @@ h3 {
     margin: 0 auto;
 }
 
+button:hover {
+    background-color: #37c3a8;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+
+}
+
+button {
+    border: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
 .gallery {
     width: 100%;
-    height: 826px;
+    min-height: 826px;
     background-image: url(IMG/Backgroundgreenfon.png);
 
 }
@@ -464,7 +706,7 @@ h3 {
 
 footer {
     width: 100%;
-background-color: #1d1d1d;
+    background-color: #1d1d1d;
     padding: 116px 0 0 5%;
     display: grid;
     grid-gap: 62px;
@@ -498,14 +740,7 @@ background-color: #1d1d1d;
     margin-top: 70px;
 }
 
-.footericon {
-    color: #ffffff;
-    font-family: "Font Awesome";
-    font-size: 25px;
-    font-weight: 400;
-    margin: 16px;
-    margin-bottom: 108px;
-}
+
 
 .mar {
     margin-top: 60px;
@@ -517,10 +752,15 @@ background-color: #1d1d1d;
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     list-style: none;
     text-decoration: none;
     display: flex;
+}
+
+.footerli:hover {
+    opacity: 1;
+
 }
 
 .iconplayfooter {
@@ -569,4 +809,294 @@ background-color: #1d1d1d;
     line-height: 130px;
 }
 
-@media screen and (max-width:1400px) {}
+a {
+    text-decoration: none;
+}
+
+.fab {
+    margin-right: 8px;
+    color: #1f1f1f;
+}
+
+.footericon {
+    color: #ffffff;
+    font-family: "Font Awesome";
+    font-size: 25px;
+    font-weight: 400;
+    margin: 16px;
+    margin-bottom: 108px;
+}
+
+.fab:hover {
+    color: #5a9ad9;
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.inputstyle {
+    height: 50px;
+    width: 231px;
+    background-color: #1d1d1d;
+    opacity: 0.51;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    ;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.textarea {
+    margin-top: 20px;
+    width: 231px;
+    background-color: #1d1d1d;
+    opacity: 0.51;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    height: 120px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    ;
+}
+
+.submit {
+    width: 125px;
+    height: 35px;
+    border-radius: 18px;
+    box-shadow: -4px 12px 40px rgba(4, 5, 5, 0.2);
+    background-color: #4c86bb;
+    margin-top: 23px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+    line-height: 35px;
+}
+
+@media screen and (max-width:1200px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        padding: 350px 0 0 50px;
+        margin-left: 50px;
+    }
+
+    .regtangles {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .whyus {
+        grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "whi1 whi2" "whi3 whi2" "whi4 whi5";
+    
+    }
+    
+   
+
+
+    .numbers {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .howweworks {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "howwewurks ourcreative""howwewurkstext ourcreativetext""lorem1column lorem2column""lorem3column .""lorembutton lorembutton";
+
+        display: grid;
+        padding: 0px 20px 50px 20px;
+        grid-gap: 10px;
+    }
+
+    .foto {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 58px 50px 50px 95px;
+    }
+
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .colltoaction {
+        font-size: 25px;
+        padding-left: 50px;
+    }
+
+    .cta {
+        margin-right: 10px;
+    }
+
+    footer {
+        padding: 50px 0 0 5%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .colltoaction {
+
+        line-height: 50px;
+    }
+
+    .mar {
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    header {
+        padding: 50px 50px 0px 30px;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    nav {
+        padding: 33px 0px 34px 30px;
+    }
+
+    .sosial {
+        margin-left: 30px;
+    }
+
+    .bannertext {
+        margin-left: 30px;
+    }
+
+    .buttom {
+        margin: 48px 0 0 30px;
+    }
+
+    .whyus {
+        padding: 25px 194px 20px 30px;
+
+    }
+
+    .numbers {
+        min-height: 100px;
+        display: grid;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        grid-gap: 50px;
+    }
+
+    .howweworks {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "howwewurks""howwewurkstext""ourcreative""ourcreativetext""lorem1column""lorem2column""lorem3column""lorembutton";
+    }
+
+    .foto {
+        padding: 20px 0px 20px 5px;
+        grid-gap: 10px;
+    }
+
+    h1 {
+
+        font-size: 35px;
+        font-weight: 500;
+        padding: 210px 0 0 50px;
+    }
+
+    h3 {
+        font-size: 45px;
+        margin: 30px auto 20px auto;
+    }
+
+    .team {
+        padding: 30px 0px 30px 20px;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header {
+        padding: 10px 5px 5px 5px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav {
+        display: grid;
+        padding: 33px 0px 34px 217px;
+        grid-gap: 12px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 20px;
+        width: 546px;
+        display: grid;
+    }
+
+    .medicalCarePlan .medicalPlanInside .medicalCareOffer .medicalCareHead {
+        font-size: 30px;
+    }
+
+    h1 {
+        color: #494949;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 250px 0 0 10px;
+    }
+
+    .regtangles {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+      .whyus {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:"whi1" "whi2" "whi3" "whi4" "whi5";
+    }
+
+    .numbers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .playreg1 {
+        width: 278px;
+    }
+
+    .foto {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px 10px;
+    }
+
+    .team {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .colltoaction {
+        height: 224px;
+
+    }
+
+    footer {
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    ul {
+        display: inline-block;
+        list-style-type: disc;
+    }
+
+    .footerli {
+        display: inline-block;
+    }
+}
